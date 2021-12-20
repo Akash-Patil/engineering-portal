@@ -9,6 +9,7 @@ import kebabCase from "lodash/kebabCase"
 import Img from "gatsby-image"
 import getTimeToRead from "../utils/timeToRead"
 import ReactGA from "react-ga"
+import { graphql } from "gatsby"
 const eventLogger = function ({ category, action, label }) {
   ReactGA.event({
     category: category,

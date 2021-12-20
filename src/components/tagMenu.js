@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, StaticQuery } from "gatsby"
 import styles from "./post.module.scss"
+import { graphql } from "gatsby"
 
 // Utilities
 import kebabCase from "lodash/kebabCase"
@@ -27,9 +28,7 @@ const TagMenu = () => {
             <div className={styles.tag}>
               <h3> Most Popular Tags </h3>
               {group.slice(0, 10).map(item => (
-                <Link to={`/tags/${kebabCase(item.tag)}/`}>
-                  {item.tag}
-                </Link>
+                <Link to={`/tags/${kebabCase(item.tag)}/`}>{item.tag}</Link>
               ))}
             </div>
           </div>

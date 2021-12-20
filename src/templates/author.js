@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import styles from "./author.module.scss"
 import CardList from "../components/cardList"
 import SEO from "../components/seo"
+import { graphql } from "gatsby"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
